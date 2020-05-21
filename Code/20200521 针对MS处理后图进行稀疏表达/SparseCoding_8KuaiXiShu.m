@@ -1,7 +1,7 @@
 % function Mat=sparseCoding(image_Origin,patchSize)
 clear all;clc
-image_Origin = imread('jq1_meanshift.jpg.jpg');
-patchSize =11;
+image_Origin = imread('sq1.png');
+patchSize =3;
 
 if(numel(size(image_Origin))==3)
     image_Gray = rgb2gray(image_Origin);

@@ -1,0 +1,14 @@
+﻿生成启动时间为 2019/12/23 15:24:37。
+     1>项目“D:\USERE\research\ganbage\imread_imwrite\imread_imwrite\imread_imwrite.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\imread_imwrite.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt imread_imwrite.cpp
+         imread_imwrite.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\USERE\research\ganbage\imread_imwrite\x64\Debug\imread_imwrite.exe" /INCREMENTAL /NOLOGO opencv_calib3d330d.lib opencv_core330d.lib opencv_dnn330d.lib opencv_features2d330d.lib opencv_flann330d.lib opencv_highgui330d.lib opencv_xfeatures2d330d.lib opencv_imgcodecs330d.lib opencv_imgproc330d.lib opencv_ml330d.lib opencv_objdetect330d.lib opencv_photo330d.lib opencv_shape330d.lib opencv_stitching330d.lib opencv_superres330d.lib opencv_video330d.lib opencv_videoio330d.lib opencv_videostab330d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\USERE\research\ganbage\imread_imwrite\x64\Debug\imread_imwrite.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\USERE\research\ganbage\imread_imwrite\x64\Debug\imread_imwrite.lib" /MACHINE:X64 x64\Debug\imread_imwrite.obj
+         x64\Debug\stdafx.obj
+         imread_imwrite.vcxproj -> D:\USERE\research\ganbage\imread_imwrite\x64\Debug\imread_imwrite.exe
+     1>已完成生成项目“D:\USERE\research\ganbage\imread_imwrite\imread_imwrite\imread_imwrite.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.72
