@@ -1,7 +1,7 @@
 % function Mat=sparseCoding(image_Origin,patchSize)
 clear all;clc
-image_Origin = imread('sq1.png');
-patchSize =3;
+image_Origin = imread('jq1.png');
+patchSize =5;
 
 if(numel(size(image_Origin))==3)
     image_Gray = rgb2gray(image_Origin);
@@ -64,11 +64,36 @@ for i =  fix(1.5*patch_Weight+1):size(image_Gray,2)-fix(1.5*patch_Weight)
 end
 Mat= uint8(C*255/size(temp,1));
 
+subplot(221)
+imshow(image_Origin);
+title('原图')
+subplot(222)
+imshow(Mat)
+title('显著度图')
+
 % 归一化后绘图
 nMat = rgb2gray(Mat);
 Max = max(max(nMat));
 Scale = 255/Max;
 nMat = nMat*Scale;
+subplot(223)
 imshow(nMat)
-colormap(jet)
-save resultPatchSize15
+colormap(jet);
+title('显著度图（归一化）')
+
+% 阈值划分
+mask = ones(size(nMat));
+mask(nMat<(0.85*max(max(nMat)))) = 0;
+mMat = zeros(size(image_Origin));
+mMat(:,:,1) = uint8(mask).*image_Origin(:,:,1);
+mMat(:,:,2) = uint8(mask).*image_Origin(:,:,2);
+mMat(:,:,3) = uint8(mask).*image_Origin(:,:,3);
+subplot(224)
+% imshow(nMat)
+
+imshow(image_Origin);
+hold on
+h = imshow(mask);set(h,'AlphaData',0.5)
+title('原图与显著度图重合')
+
+
